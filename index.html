@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="panda.css">
+    <title>Panda Website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="images\panda logo.png" alt="gfg_logo">
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <span class="line">___</span>
+                <span class="line">___</span>
+                <span class="line">___</span>
+            </div>
+            <div class="nav-menu hide">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="Login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-flex">
+            <div class="item1">
+                
+                <div class="sliders" style="max-width:500px">
+                  
+                    <img class="slider" src="images\slider1.png" style="width:100%" >
+                    <img class="slider" src="images\slider2.png" style="width:100%" >
+                    <img class="slider" src="images\slider3.png" style="width:100%">
+                    <img class="slider" src="images\slider4.png" style="width:100%">
+                </div>
+            </div>
+            <div class="item2">
+                    
+                    <b><h1 class="animate__animated animate__pulse animate__infinite	infinite">Welcome to Pandas Club</h1></b>
+                    <div class="divbu">
+                        <button type="submit" onclick="Login()">Login </button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Panda World. All rights reserved.</p>
+  </footer>
+</body>
+<script src="./panda.js"></script>
+
+</html>

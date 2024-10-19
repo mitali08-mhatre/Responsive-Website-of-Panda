@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Blog</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      transition: all 0.4s;
+    }
+    body{
+      font-family: sans-serif;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.3rem;
+      font-weight: bold;
+    
+    }
+    /* navbar styling */
+    .navbar{
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-bottom: 2px solid rgb(223, 251, 219);
+      background-color: black;
+    
+    }
+    
+    /* logo style  */
+    .logo img{
+      width: 12rem;
+      height: 4.3rem;
+      margin-left:1rem;
+    }
+    
+    .hamburger-menu{
+    padding-right: 1.5rem;
+    cursor: pointer;
+    padding-bottom: 30px;
+     }
+    
+    .hamburger-menu .line{
+       display: block;
+       width:2.5rem;
+       height: 2px;
+       margin-bottom: 10px;
+       background-color: black;
+       cursor: pointer;
+       color: white;
+    }
+    
+    .nav-menu{
+      position: fixed;
+      width: 94%;
+      top: 6rem;
+      left: 18px;
+      background-color:black;
+      font-weight: 600;
+    
+    }
+    .nav-menu a{
+      display: block;
+      text-align: center;
+      padding: 5px 0;
+      color: white;
+    }
+    .nav-menu a:hover{
+      background-color: rgb(223, 251, 219);
+    }
+    
+    .hide{
+    display: none;
+    }
+    /* for Desktop view  */
+    @media screen and (min-width:600px){
+    .navbar{
+        justify-content: space-around;
+    }
+    .nav-menu{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right:20px;
+        background: none;
+    }
+    .nav-menu a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .nav-menu a:hover{
+        background-color: rgb(223, 251, 219);
+        border-radius: 5px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    }
+    /* General Page Styling */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    }
+
+    h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+    }
+
+    /* Header Styling */
+    .header {
+    background-color: #010802;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    }
+
+    .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 0px 4px 4px white;
+    }
+
+    .header p {
+    font-size: 1.2rem;
+    }
+    .header :hover{
+      opacity: 0.7;
+      transform: scale(1.12);
+    }
+    /* Blog Section Styling */
+    .blog {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    }
+
+    .blog-post {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    }
+
+    .blog-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+    }
+
+    .blog-excerpt {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    }
+
+    .read-more {
+    font-size: 1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    }
+
+    .read-more:hover {
+    text-decoration: underline;
+    }
+
+    /* Footer Styling */
+    .footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .blog {
+        padding: 20px;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+    }
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="images\panda logo.png" alt="gfg_logo">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <span class="line">___</span>
+            <span class="line">___</span>
+            <span class="line">___</span>
+        </div>
+        <div class="nav-menu hide">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="Login.html">Login</a>
+        </div>
+    </nav>
+</header>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Panda Blog</h1>
+    <p>Explore the latest articles and stories about Panda</p>
+  </header>
+
+  <!-- Blog Section -->
+  <section class="blog">
+    <div class="blog-post">
+      <h2 class="blog-title">The Secret Life of Panda</h2>
+      <p class="blog-date">Posted on October 1, 2024</p>
+      <p class="blog-excerpt">Pandas are one of the most beloved animals in the world, known for their cute and cuddly appearance. But behind their calm demeanor and gentle nature, pandas have a rich and fascinating life that is largely hidden from the public eye. From their secretive behaviors in the wild to their surprising strength and adaptability, pandas have many untold stories....</p>
+      <a href="readmore.html" class="read-more">Read more</a>
+    </div>
+
+    <div class="blog-post">
+      <h2 class="blog-title">Panda and Their Love for Bamboo</h2>
+      <p class="blog-date">Posted on September 25, 2024</p>
+      <p class="blog-excerpt">Bamboo is more than just food for Panda—it's a way of life. Few things are as iconic as the image of a panda happily munching away on bamboo. This lovable bear has become a symbol of wildlife conservation, and their relationship with bamboo is a cornerstone of their identity. While bamboo is a simple plant, the story of how it sustains pandas and shapes their lives is anything but simple....</p>
+      <a href="readmore.html" class="read-more">Read more</a>
+    </div>
+
+    <div class="blog-post">
+      <h2 class="blog-title">Panda Conservation Success Stories</h2>
+      <p class="blog-date">Posted on September 15, 2024</p>
+      <p class="blog-excerpt">Conservation efforts over the past decades have helped Panda move from being "endangered" to "vulnerable." But how did this happen, and what challenges remain? Read on to learn more...</p>
+      <a href="readmore.html" class="read-more">Read more</a>
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Panda Blog. All rights reserved.</p>
+  </footer>
+
+</body>
+<script>
+  const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hide');
+    });
+</script>
+</html>
